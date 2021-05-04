@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Accessing JSON Array Value</h2>
+    <div id='myid'></div>
+    <script>
+        var obj={
+            'name':'raj',
+            'mobile':89812345,
+            'courses':['PHP','ANDRIOD','.NET','KOTLIN']
+        }
+        var c1=obj.courses[0];
+        var c2=obj.courses[1]
+        document.getElementById('myid').innerHTML=c1+','+c2
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>converting JSON string into Javascript Object using JSON.parse method</p>
+    <div id='myid'>
+        <p>Data are:</p>
+    </div>
+    <script>
+        var obj=`{
+            "name":"raj singh",
+            "mobile":12345678,
+            "city":"ndls",
+            "courses":["flutter","dart","kotlin"]
+        }`
+        var data=JSON.parse(obj)
+        var name=data.name
+        var mobile=data.mobile
+        var city=data.city
+        var course1=data.courses[0]
+        var course2=data.courses[1]
+        var course3=data.courses[2]
+        document.getElementById("myid").innerHTML+=name+'<br/>'+mobile+'<br/>'+city+'<br/>'+course1+'<br/>'+course2+'<br/>'+course3
+    </script>
+</body>
+</html>

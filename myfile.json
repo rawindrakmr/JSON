@@ -1,0 +1,25 @@
+// {
+//     "Name":"Raj Singh",
+//     "Mobile":44335566,
+//     "City":"LKO",
+//     "Course":["DART","FLUTTER","KOTLINE","ANDROID"],
+//     "Address":{"Area":"Gomti Nagar","Pin":543322
+//     }
+    
+// }
+
+{
+    "name":"ajay singh",
+    "marks":78,
+    "Date":"2020-05-14",
+    "Courses":["DART","KOTLIN","FLUTTER","IONIC"],
+    "Address":{
+        "city":"NDLS",
+        "area":"Anand Bihar",
+        "pin":234566,
+        "ion":80.234,
+        "lat":34.45
+    },
+    "married":false,
+    "dod":null
+}

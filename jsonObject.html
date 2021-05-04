@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Accessing JSON object Value using dot(.) Notation</p>
+    <div id="Myid"></div>
+    <p>Accessing JSON object Value using Bracket Notation</p>
+    <div id="myid"></div>
+    <script>
+        var obj={"name":"Raj Singh","mobile":12345678,"city":"NDLS"};
+        var Name =obj.name;
+        var Mobile=obj.mobile;
+        var City=obj.city;
+        document.getElementById("Myid").innerHTML="Name: "+Name+"<br/>"+"Mobile: "+Mobile+"<br/>"+ "City: "+City;
+
+        var obj={"name":"Raj Singh","mobile":12345678,"city":"NDLS"};
+        var Name =obj["name"];
+        var Mobile=obj["mobile"];
+        var City=obj["city"];
+        document.getElementById("myid").innerHTML="Name: "+Name+"<br/>"+"Mobile: "+Mobile+"<br/>"+ "City: "+City;
+
+    </script>
+</body>
+</html>

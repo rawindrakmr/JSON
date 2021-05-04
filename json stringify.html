@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Converting Javascript object into JSON String using JSON.stringify</h2>
+    <div id='myid'></div>
+
+    <script>
+         var obj={
+             name:"Ram Singh",
+             mobile:1234567,
+             city:"NDLS"
+         }
+         var data=JSON.stringify(obj)
+         document.getElementById("myid").innerHTML=data 
+
+
+         var arr=["Kanpur","Lucknow","Indor","Chandigarh"]
+         var city=JSON.stringify(arr)
+         document.getElementById("myid").innerHTML=city
+    </script>
+</body>
+</html>

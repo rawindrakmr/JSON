@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Accessing JSON Object Keys and Values using for in loop</p>
+    <div id="myid">
+        <p>The Keys are:</p>
+    </div>
+    <div id="MyId">
+        <p>The values are:</p>
+
+    </div>
+    <div id="MYID">
+        <p>Key- value pairs are:</p>
+    </div>
+    <script>
+        var obj={"name":"Raj Singh", "Mobile":1234567,"city":"NDLS"};
+        for (var i in obj){
+            document.getElementById("myid").innerHTML+=i+"<br/>"
+            document.getElementById("MyId").innerHTML+=obj[i]+"<br/>"
+            document.getElementById("MYID").innerHTML+=i+":"+obj[i]+"<br/>"
+        }
+
+    </script>
+</body>
+</html>
